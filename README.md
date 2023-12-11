@@ -28,5 +28,6 @@ This repository contains the code and files for the Data Security and Privacy Te
 
 ## Extra points: 
 - For the extra points we have created a new python file which is named as extra_score.py. You can directly excute the code in your local and it will display the necessary output as asked by the professor.
-
+## libraries
+- for the file extra_score.py we have used a module "pyope". If this module is installed you would not get any errors, but if it's not installed please use the command : pip install pyope.
 
