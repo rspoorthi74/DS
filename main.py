@@ -70,8 +70,9 @@ if "authenticated" in authentication_result.lower():
             )
         print("Attempting to add data with integrity hash by user in Group H:")
         print(add_data(username, new_data_int))  # Adding data using a user from group H
-        user_to_retrieve = input("Enter the username to retrieve data: ")
+        user_to_retrieve = input("Enter the first name of the new data which you have entered in order to retrieve data: ")
         *retrieved_data, retrieved_hash = retrieve_data(user_to_retrieve)
+        ## when given an user to retrive vale the excution will take place accordingly as given below 
         ##*retrieved_data, retrieved_hash = retrieve_data('Alice')
 
         print("Attempting to verify the integrity of the retrieved data:")
@@ -100,7 +101,7 @@ if "authenticated" in authentication_result.lower():
     print(result_add)
 
     # Query data with completeness check and decryption
-    x = input("Enter first name for query: ")
+    x = input("Enter first name of the new data to check for confidentiality: ")
     result, message = query_data_with_completeness_check_and_decryption(username, x)
     print("Decrypted result:", result)
 
